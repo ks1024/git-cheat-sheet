@@ -5,11 +5,13 @@
 
 ## Install Git
 
+```
 [Github for Windows](https://windows.github.com)
 
 [Github for Mac](https://mac.github.com)
 
 [Github for Linux](http://git-scm.com/book/en/Getting-Started-Installing-Git)
+```
 
 ## Create repositories
 
