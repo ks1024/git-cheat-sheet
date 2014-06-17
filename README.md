@@ -119,7 +119,9 @@ For an original repo that you've forked
 
 ```
 $ git remote upstream https://github.com/username/repo.git
-# When a repo is cloned, it has a default remote called origin that points to your fork on GitHub, not the original repo it was forked from. To keep track of the original repo, you need to add another remote named upstream
+# When a repo is cloned, it has a default remote called origin that points to 
+your fork on GitHub, not the original repo it was forked from. To keep track of 
+the original repo, you need to add another remote named upstream
 ```
 
 For your own repo on Github
@@ -167,7 +169,8 @@ You can also use `git pull` to get commits from a remote repository
 
 ```
 $ git pull 
-# when you use git pull, git will merge any pulled commits into the branch you are currently working in which may run into frequent conflicts
+# when you use git pull, git will merge any pulled commits into the branch 
+you are currently working in which may run into frequent conflicts
 ```
 
 
