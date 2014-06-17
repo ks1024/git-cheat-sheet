@@ -26,3 +26,31 @@ Create a working copy of a local repository
 git clone /path/to/repository
 ```
 
+## Make changes
+
+Lists all new or modified files waiting to be commited
+
+```
+git status
+```
+
+Add changes (new or modified files) to the **Index**
+
+add a file with the specified name
+
+```
+git add [filename]
+```
+
+add all files
+
+```
+git add *
+```
+
+Commit changes
+
+```
+git commit -m "descriptive message"
+```
+
