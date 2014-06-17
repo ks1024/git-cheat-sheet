@@ -36,13 +36,13 @@ git status
 
 Add changes (new or modified files) to the **Index**
 
-add a file with the specified name
+* add a file with the specified name
 
 ```
 git add [filename]
 ```
 
-add all files
+* add all files
 
 ```
 git add *
