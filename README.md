@@ -45,7 +45,7 @@ Now that your changes are in the **HEAD** of your local working directory, which
 $ git push origin [branch-name]
 ```
 
-## Branching
+## Branch
 
 You can list all local branches in your current working directory.
 The current branch will be highlited with an asterisk (`*`)
@@ -67,9 +67,28 @@ For switching to the specified branch
 $ git checkout [branch-name]
 ```
 
-or you can switch to it just after creating a new branch
+Or you can switch to it just after creating a new branch
 
 ```
 $ git checkout -b [branch-name]
 ```
+
+You can delete a specified branch
+
+```
+$ git branch -d [branch-name]
+```
+
+## Synchronize changes
+
+If you want syncing a fork, you should first add a new remote
+
+```
+$ git remote add origin /path/to/origin/repository
+```
+
+
+
+
+
 
