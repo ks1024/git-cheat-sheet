@@ -23,7 +23,7 @@ Once you've made changes to your files, you can list all new or modified files w
 
 ```
 git status 
-git status -s
+git status -s	=> -s : short format
 ```
 
 Add changes (new or modified files) to the **Index**
