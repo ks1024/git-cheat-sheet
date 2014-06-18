@@ -168,7 +168,7 @@ $ git push [alias] [branch-name]
 You can also use `git pull` to get commits from a remote repository
 
 ```Shell
-$ git pull 
+git pull 
 # when you use git pull, git will merge any pulled commits into the branch 
 you are currently working in which may run into frequent conflicts
 ```
