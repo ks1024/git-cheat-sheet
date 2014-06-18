@@ -177,7 +177,7 @@ $ git pull
 
 You can list all commits for the current branch by running
 
-```
+```sh
 $ git log
 $ git log -10 
 # limit to 10 last commits
@@ -185,30 +185,30 @@ $ git log -10
 
 To see each commit in a single line
 
-```
+```sh
 $ git log --oneline
 ```
 To see only commits by a particular author
 
-```
+```sh
 $ git log --author=[author-name]
 ```
 
 To display commits of a specified file
 
-```
+```sh
 $ git log -- [file-name]
 ```
 
 To generate a pretty ASCII graph of all branches
 
-```
+```sh
 $ git log --graph --oneline --all
 ```
 
 To output metadata and content changes of the specified commit
 
-```
+```sh
 $ git show [commit]
 ```
 
@@ -216,25 +216,25 @@ $ git show [commit]
 
 You can attach the username to your commit transactions
 
-```
+```sh
 $ git config --global user.name "[username]"
 ```
 
 You can also attach a email to your commit transactions
 
-```
+```sh
 $ git config --global user.email "[email-address]"
 ```
 
 For creating an alias for a specified git command by running
 
-```
+```sh
 $ git config --global alias.[alias-name] [git-command]
 ```
 
 To open the global configuration file in a text editor
 
-```
+```sh
 $ git config --global --edit
 ```
 
