@@ -7,13 +7,13 @@
 
 Create a new local repository with the specified name
 
-```Shell
+```sh
 $ git init [project-name]
 ```
 
 Clone a remote repository to your local machine
 
-```Shell
+```sh
 $ git clone [url]
 ```
 
@@ -21,7 +21,7 @@ $ git clone [url]
 
 Once you've made changes to your files, you can list all new or modified files waiting to be commited
 
-```Shell
+```sh
 $ git status 
 $ git status -s	 
 # -s : short format
@@ -29,7 +29,7 @@ $ git status -s
 
 Add changes (new or modified files) to the **Index**
 
-```Shell
+```sh
 $ git add [file-name]
 # add a specified file
 $ git add *			
@@ -38,13 +38,13 @@ $ git add *
 
 Commit changes to **HEAD**
 
-```Shell
+```sh
 $ git commit -m "commit message"
 ```
 
 Now that your changes are in the **HEAD** of your local working directory, which means they are ready to be pushed to your remote repository in Github, then push your changes 
 
-```Shell
+```sh
 $ git push [alias] [branch-name]
 $ git push origin master
 # push commits to your remote repository (master branch) stored on github 
@@ -54,26 +54,26 @@ $ git push origin master
 
 For creating a new branch
 
-```Shell
+```sh
 $ git branch [branch-name]
 ```
 
 For switching to the specified branch 
 
-```Shell
+```sh
 $ git checkout [branch-name]
 ```
 
 Or you can directly switch to the new branch after creating it
 
-```Shell
+```sh
 $ git checkout -b [branch-name]
 ```
 
 You can list all local branches in your current working directory.
 The current branch will be highlighted with an asterisk (`*`)
 
-```Shell
+```sh
 $ git branch
   develop
 * master
@@ -81,7 +81,7 @@ $ git branch
 
 You can use `-a` to shows all local and remote branches
 
-```Shell
+```sh
 $ git branch -a
   develop
 * master
@@ -93,7 +93,7 @@ $ git branch -a
 
 Or use `-r` to show only remote branches
 
-```Shell
+```sh
 $ git branch -r
   origin/HEAD -> origin/master
   origin/develop
@@ -103,7 +103,7 @@ $ git branch -r
 
 You can delete a specified branch
 
-```Shell
+```sh
 $ git branch -d [branch-name]
 ```
 
@@ -111,13 +111,13 @@ $ git branch -d [branch-name]
 
 To add a new remote, use the `git remote add` command in your working directory
 
-```Shell
+```sh
 $ git remote add [alias] [url]
 ```
 
 For an original repo that you've forked
 
-```Shell
+```sh
 $ git remote upstream https://github.com/username/repo.git
 # When a repo is cloned, it has a default remote called origin that points to 
 your fork on GitHub, not the original repo it was forked from. To keep track of 
@@ -126,13 +126,13 @@ the original repo, you need to add another remote named upstream
 
 For your own repo on Github
 
-```Shell
+```sh
 $ git remote origin https://github.com/yourname/repo.git
 ```
 
 Then you can list your remote aliases
 
-```Shell
+```sh
 $ git remote
 origin
 master
@@ -147,13 +147,13 @@ upstream	https://github.com/username/repo.git (push)
 
 If the original repo you forked gets updated, you can fetch any new changes from the original repository by running
 
-```Shell
+```sh
 $ git fetch upstream [branch-name]
 ```
 
 Combines any changes fetched into current local branch
 
-```Shell
+```sh
 $ git merge [alias]/[branch-name]
 $ git merge upstream/master
 # merges changes fetched into your working files
@@ -161,13 +161,13 @@ $ git merge upstream/master
 
 Uploads all local branch commits to Github
 
-```Shell
+```sh
 $ git push [alias] [branch-name]
 ```
 
 You can also use `git pull` to get commits from a remote repository
 
-```Shell
+```sh
 git pull 
 # when you use git pull, git will merge any pulled commits into the branch 
 you are currently working in which may run into frequent conflicts
