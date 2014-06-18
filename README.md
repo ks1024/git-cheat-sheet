@@ -232,10 +232,26 @@ For creating an alias for a specified git command by running
 $ git config --global alias.[alias-name] [git-command]
 ```
 
-To open the global configuration file in a text editor
+To open the global configuration file (~/.gitconfig) in a text editor
 
 ```sh
 $ git config --global --edit
+```
+
+## Undo commits
+
+If you did some mistakes, you can undo your commits.
+
+Reset staging area to match the specified commit, but leave the working directory unchanged
+
+```sh
+$ git reset [commit]
+```
+
+Reset both the staging area & working directory to match the specified commit, delete uncommited changes and all commits after the specified commit 
+
+```
+$ git reset --hard [commit]
 ```
 
 
