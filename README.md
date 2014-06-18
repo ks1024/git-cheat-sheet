@@ -167,7 +167,7 @@ You can also use `git pull` to get commits from a remote repository
 
 ```sh
 $ git pull 
-# when you use git pull, git will merge any pulled commits into the branch you are currently working in which may run into frequent conflicts
+# when you use git pull, git will merge any pulled commits into the branch <br />you are currently working in which may run into frequent conflicts
 ```
 
 
