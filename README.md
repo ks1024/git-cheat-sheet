@@ -7,13 +7,13 @@
 
 Create a new local repository with the specified name
 
-```sh
+```
 $ git init [project-name]
 ```
 
 Clone a remote repository to your local machine
 
-```sh
+```
 $ git clone [url]
 ```
 
@@ -21,7 +21,7 @@ $ git clone [url]
 
 Once you've made changes to your files, you can list all new or modified files waiting to be commited
 
-```sh
+```
 $ git status 
 $ git status -s	 
 # -s : short format
@@ -29,7 +29,7 @@ $ git status -s
 
 Add changes (new or modified files) to the **staging area** (or **index**)
 
-```sh
+```
 $ git add [file-name]
 # add a specified file
 $ git add *			
@@ -38,13 +38,13 @@ $ git add *
 
 Commit changes to **HEAD**
 
-```sh
+```
 $ git commit -m "commit message"
 ```
 
 Now that your changes are in the **HEAD** of your local working directory, which means they are ready to be pushed to your remote repository in Github, then push your changes 
 
-```sh
+```
 $ git push [alias] [branch-name]
 $ git push origin master
 # push commits to your remote repository (master branch) stored on github 
@@ -54,26 +54,26 @@ $ git push origin master
 
 For creating a new branch
 
-```sh
+```
 $ git branch [branch-name]
 ```
 
 For switching to the specified branch 
 
-```sh
+```
 $ git checkout [branch-name]
 ```
 
 Or you can directly switch to the new branch after creating it
 
-```sh
+```
 $ git checkout -b [branch-name]
 ```
 
 You can list all local branches in your current working directory.
 The current branch will be highlighted with an asterisk (`*`)
 
-```sh
+```
 $ git branch
   develop
 * master
@@ -81,7 +81,7 @@ $ git branch
 
 You can use `-a` to shows all local and remote branches
 
-```sh
+```
 $ git branch -a
   develop
 * master
@@ -93,7 +93,7 @@ $ git branch -a
 
 Or use `-r` to show only remote branches
 
-```sh
+```
 $ git branch -r
   origin/HEAD -> origin/master
   origin/develop
@@ -103,7 +103,7 @@ $ git branch -r
 
 You can delete a specified branch
 
-```sh
+```
 $ git branch -d [branch-name]
 ```
 
@@ -111,13 +111,13 @@ $ git branch -d [branch-name]
 
 To add a new remote, use the `git remote add` command in your working directory 
 
-```sh
+```
 $ git remote add [alias] [url]
 ```
 
 For an original repo that you've forked
 
-```sh
+```
 $ git remote upstream https://github.com/username/repo.git
 # When a repo is cloned, it has a default remote called origin that points to 
 # your fork on GitHub, not the original repo it was forked from. To keep track of 
@@ -132,7 +132,7 @@ $ git remote origin https://github.com/yourname/repo.git
 
 You can list all your remote aliases by running
 
-```sh
+```
 $ git remote
 origin
 master
@@ -147,13 +147,13 @@ upstream	https://github.com/username/repo.git (push)
 
 If the original repo you forked gets updated, you can fetch any new changes from the original repository by running
 
-```sh
+```
 $ git fetch upstream [branch-name]
 ```
 
 Combines any changes fetched into your current local branch
 
-```sh
+```
 $ git merge [alias]/[branch-name]
 $ git merge upstream/master
 # merges changes fetched into your working files
@@ -161,13 +161,13 @@ $ git merge upstream/master
 
 Uploads all local branch commits to Github
 
-```sh
+```
 $ git push [alias] [branch-name]
 ```
 
 You can also use `git pull` to get commits from a remote repository
 
-```sh
+```
 $ git pull 
 # when you use git pull, git will merge any pulled commits into the branch 
 # you are currently working in, but it may run into frequent conflicts
@@ -177,7 +177,7 @@ $ git pull
 
 You can list all commits for the current branch by running
 
-```sh
+```
 $ git log
 $ git log -10 
 # limit to 10 last commits
@@ -185,30 +185,30 @@ $ git log -10
 
 To see each commit in a single line
 
-```sh
+```
 $ git log --oneline
 ```
 To see only commits by a particular author
 
-```sh
+```
 $ git log --author=[author-name]
 ```
 
 To display commits of a specified file
 
-```sh
+```
 $ git log -- [file-name]
 ```
 
 To generate a pretty ASCII graph of all branches
 
-```sh
+```
 $ git log --graph --oneline --all
 ```
 
 To output metadata and content changes of the specified commit
 
-```sh
+```
 $ git show [commit]
 ```
 
@@ -216,25 +216,25 @@ $ git show [commit]
 
 You can attach the username to your commit transactions
 
-```sh
+```
 $ git config --global user.name "[username]"
 ```
 
 You can also attach a email to your commit transactions
 
-```sh
+```
 $ git config --global user.email "[email-address]"
 ```
 
 For creating an alias for a specified git command by running
 
-```sh
+```
 $ git config --global alias.[alias-name] [git-command]
 ```
 
 To open the global configuration file (~/.gitconfig) in a text editor
 
-```sh
+```
 $ git config --global --edit
 ```
 
@@ -244,13 +244,13 @@ If you did some mistakes, you can undo your commits.
 
 Reset staging area to match the specified commit, but leave the working directory unchanged
 
-```sh
+```
 $ git reset [commit]
 ```
 
 Reset both the staging area & working directory to match the specified commit, delete uncommited changes and all commits after the specified commit 
 
-```sh
+```
 $ git reset --hard [commit]
 ```
 
