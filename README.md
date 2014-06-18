@@ -254,6 +254,14 @@ Reset both the staging area & working directory to match the specified commit, d
 $ git reset --hard [commit]
 ```
 
+## Other Git References
+
+[Git cheat sheet made by Atlassian](https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&sqi=2&ved=0CDIQFjAA&url=https%3A%2F%2Fwww.atlassian.com%2Fdms%2Fwac%2Fimages%2Flanding%2Fgit%2Fatlassian_git_cheatsheet.pdf&ei=Vc6hU8OjMcqH0AX92oHABw&usg=AFQjCNGqtOA5UPshK3MhDPRsKd3Cz0ytZQ&sig2=3Xdv0qdMXULeQwzUgZSf7Q&bvm=bv.69137298,d.d2k&cad=rja)
+
+[Git cheat sheet made by Github](https://github.com/github/training-materials/blob/master/downloads/github-git-cheat-sheet.pdf?raw=true)
+
+[git - the simple guide](http://rogerdudler.github.io/git-guide/) made by [Roger Dudler](https://github.com/rogerdudler)
+
 
 
 
