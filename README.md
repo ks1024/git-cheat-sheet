@@ -250,7 +250,7 @@ $ git reset [commit]
 
 Reset both the staging area & working directory to match the specified commit, delete uncommited changes and all commits after the specified commit 
 
-```
+```sh
 $ git reset --hard [commit]
 ```
 
